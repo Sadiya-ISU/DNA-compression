@@ -1,0 +1,658 @@
+{
+  "algorithms": {
+    "2bit_pack": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 2.001438057776086,
+        "compression_ratio_%": 25.017975722201076,
+        "decode_time_s": 0.0012930938974022865,
+        "encode_time_s": 0.0011869180016219616,
+        "lossless": true,
+        "peak_memory_mb": 0.21965408325195312,
+        "total_time_s": 0.002480011899024248
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.0007422374335078,
+        "compression_ratio_%": 25.009277967918848,
+        "decode_time_s": 0.0026701781898736954,
+        "encode_time_s": 0.002451667096465826,
+        "lossless": true,
+        "peak_memory_mb": 0.4462251663208008,
+        "total_time_s": 0.005121845286339521
+      },
+      "large_test.fasta": {
+        "bits_per_base": 2.001594578433327,
+        "compression_ratio_%": 25.019932230416586,
+        "decode_time_s": 0.001110950019210577,
+        "encode_time_s": 0.001008196733891964,
+        "lossless": true,
+        "peak_memory_mb": 0.1938791275024414,
+        "total_time_s": 0.002119146753102541
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 2.0045953535869288,
+        "compression_ratio_%": 25.05744191983661,
+        "decode_time_s": 0.00043440237641334534,
+        "encode_time_s": 0.0003947862423956394,
+        "lossless": true,
+        "peak_memory_mb": 0.07548809051513672,
+        "total_time_s": 0.0008291886188089848
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.006683995544003,
+        "compression_ratio_%": 25.08354994430004,
+        "decode_time_s": 0.00030481768772006035,
+        "encode_time_s": 0.00028355279937386513,
+        "lossless": true,
+        "peak_memory_mb": 0.05285167694091797,
+        "total_time_s": 0.0005883704870939255
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 2.0014673514306676,
+        "compression_ratio_%": 25.018341892883345,
+        "decode_time_s": 0.0012677661143243313,
+        "encode_time_s": 0.0011452366597950459,
+        "lossless": true,
+        "peak_memory_mb": 0.2189788818359375,
+        "total_time_s": 0.002413002774119377
+      },
+      "small_test.fasta": {
+        "bits_per_base": 2.0128824476650564,
+        "compression_ratio_%": 25.161030595813205,
+        "decode_time_s": 0.0001444173976778984,
+        "encode_time_s": 0.00013430463150143623,
+        "lossless": true,
+        "peak_memory_mb": 0.023308753967285156,
+        "total_time_s": 0.00027872202917933464
+      }
+    },
+    "DNACompress": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 3.2283551156790593,
+        "compression_ratio_%": 40.35443894598824,
+        "decode_time_s": 0.0011576851829886436,
+        "encode_time_s": 0.02344488399103284,
+        "lossless": true,
+        "peak_memory_mb": 4.314470291137695,
+        "total_time_s": 0.024602569174021482
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 7.809162508762525,
+        "compression_ratio_%": 97.61453135953157,
+        "decode_time_s": 0.004427318926900625,
+        "encode_time_s": 0.048977543134242296,
+        "lossless": true,
+        "peak_memory_mb": 14.19629955291748,
+        "total_time_s": 0.05340486206114292
+      },
+      "large_test.fasta": {
+        "bits_per_base": 5.679489734901336,
+        "compression_ratio_%": 70.99362168626669,
+        "decode_time_s": 0.0011536376550793648,
+        "encode_time_s": 0.028235995210707188,
+        "lossless": true,
+        "peak_memory_mb": 4.757779121398926,
+        "total_time_s": 0.029389632865786552
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 7.0370181261169265,
+        "compression_ratio_%": 87.96272657646158,
+        "decode_time_s": 0.00046046730130910873,
+        "encode_time_s": 0.010648692026734352,
+        "lossless": true,
+        "peak_memory_mb": 2.1431798934936523,
+        "total_time_s": 0.01110915932804346
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 11.55588562940958,
+        "compression_ratio_%": 144.44857036761977,
+        "decode_time_s": 0.0004771859385073185,
+        "encode_time_s": 0.014422550797462463,
+        "lossless": true,
+        "peak_memory_mb": 2.282754898071289,
+        "total_time_s": 0.014899736735969782
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.4326097276768374,
+        "compression_ratio_%": 5.407621595960467,
+        "decode_time_s": 0.0006192512810230255,
+        "encode_time_s": 0.03426389582455158,
+        "lossless": true,
+        "peak_memory_mb": 1.4582099914550781,
+        "total_time_s": 0.03488314710557461
+      },
+      "small_test.fasta": {
+        "bits_per_base": 5.690821256038648,
+        "compression_ratio_%": 71.1352657004831,
+        "decode_time_s": 0.00012288102880120277,
+        "encode_time_s": 0.0030531506054103374,
+        "lossless": true,
+        "peak_memory_mb": 0.5526819229125977,
+        "total_time_s": 0.0031760316342115402
+      }
+    },
+    "LZ78_style": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 4.865372414668189,
+        "compression_ratio_%": 60.81715518335237,
+        "decode_time_s": 0.003950930666178465,
+        "encode_time_s": 0.01657027378678322,
+        "lossless": true,
+        "peak_memory_mb": 2.789870262145996,
+        "total_time_s": 0.020521204452961683
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 4.975464929281267,
+        "compression_ratio_%": 62.19331161601583,
+        "decode_time_s": 0.008850173093378544,
+        "encode_time_s": 0.015216408763080835,
+        "lossless": true,
+        "peak_memory_mb": 5.569648742675781,
+        "total_time_s": 0.02406658185645938
+      },
+      "large_test.fasta": {
+        "bits_per_base": 4.7618098465218255,
+        "compression_ratio_%": 59.522623081522816,
+        "decode_time_s": 0.0032371357083320618,
+        "encode_time_s": 0.006144542247056961,
+        "lossless": true,
+        "peak_memory_mb": 2.346456527709961,
+        "total_time_s": 0.009381677955389023
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 5.249936175644626,
+        "compression_ratio_%": 65.62420219555783,
+        "decode_time_s": 0.0013638949021697044,
+        "encode_time_s": 0.0024746358394622803,
+        "lossless": true,
+        "peak_memory_mb": 0.9788990020751953,
+        "total_time_s": 0.0038385307416319847
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 5.868548087634609,
+        "compression_ratio_%": 73.3568510954326,
+        "decode_time_s": 0.0009695729240775108,
+        "encode_time_s": 0.0017487597651779652,
+        "lossless": true,
+        "peak_memory_mb": 0.7630157470703125,
+        "total_time_s": 0.002718332689255476
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 3.924906132665832,
+        "compression_ratio_%": 49.0613266583229,
+        "decode_time_s": 0.003470352850854397,
+        "encode_time_s": 0.0067601450718939304,
+        "lossless": true,
+        "peak_memory_mb": 2.4239158630371094,
+        "total_time_s": 0.010230497922748327
+      },
+      "small_test.fasta": {
+        "bits_per_base": 5.516908212560386,
+        "compression_ratio_%": 68.96135265700482,
+        "decode_time_s": 0.0004596179351210594,
+        "encode_time_s": 0.0007666922174394131,
+        "lossless": true,
+        "peak_memory_mb": 0.35128211975097656,
+        "total_time_s": 0.0012263101525604725
+      }
+    },
+    "LZSS": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 3.284862327115848,
+        "compression_ratio_%": 41.0607790889481,
+        "decode_time_s": 0.001289845909923315,
+        "encode_time_s": 0.3365997700020671,
+        "lossless": true,
+        "peak_memory_mb": 0.5467071533203125,
+        "total_time_s": 0.3378896159119904
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 6.16271493959012,
+        "compression_ratio_%": 77.0339367448765,
+        "decode_time_s": 0.0041880239732563496,
+        "encode_time_s": 1.2491248142905533,
+        "lossless": true,
+        "peak_memory_mb": 1.728128433227539,
+        "total_time_s": 1.2533128382638097
+      },
+      "large_test.fasta": {
+        "bits_per_base": 4.1108232011162045,
+        "compression_ratio_%": 51.385290013952556,
+        "decode_time_s": 0.0012753983028233051,
+        "encode_time_s": 0.3954455768689513,
+        "lossless": true,
+        "peak_memory_mb": 0.5434236526489258,
+        "total_time_s": 0.3967209751717746
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 4.2838907327035995,
+        "compression_ratio_%": 53.548634158795,
+        "decode_time_s": 0.0005162423476576805,
+        "encode_time_s": 0.15142199164256454,
+        "lossless": true,
+        "peak_memory_mb": 0.21751976013183594,
+        "total_time_s": 0.15193823399022222
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 6.375046416635723,
+        "compression_ratio_%": 79.68808020794653,
+        "decode_time_s": 0.0004676021635532379,
+        "encode_time_s": 0.1278304192237556,
+        "lossless": true,
+        "peak_memory_mb": 0.20067501068115234,
+        "total_time_s": 0.12829802138730884
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 1.1718095895731733,
+        "compression_ratio_%": 14.647619869664666,
+        "decode_time_s": 0.0007510120049118996,
+        "encode_time_s": 0.1807932867668569,
+        "lossless": true,
+        "peak_memory_mb": 0.33203697204589844,
+        "total_time_s": 0.1815442987717688
+      },
+      "small_test.fasta": {
+        "bits_per_base": 3.429951690821256,
+        "compression_ratio_%": 42.874396135265705,
+        "decode_time_s": 0.0001460649073123932,
+        "encode_time_s": 0.03336009895429015,
+        "lossless": true,
+        "peak_memory_mb": 0.05985069274902344,
+        "total_time_s": 0.033506163861602545
+      }
+    },
+    "VCSDplus": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 2.870701687603096,
+        "compression_ratio_%": 35.8837710950387,
+        "decode_time_s": 0.025331933051347733,
+        "encode_time_s": 0.030118675902485847,
+        "lossless": true,
+        "peak_memory_mb": 6.093747138977051,
+        "total_time_s": 0.05545060895383358
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.669580635850068,
+        "compression_ratio_%": 33.36975794812585,
+        "decode_time_s": 17.852119638118893,
+        "encode_time_s": 18.146063110791147,
+        "lossless": true,
+        "peak_memory_mb": 2007.5064973831177,
+        "total_time_s": 35.99818274891004
+      },
+      "large_test.fasta": {
+        "bits_per_base": 3.1345425553119393,
+        "compression_ratio_%": 39.181781941399244,
+        "decode_time_s": 0.07185027375817299,
+        "encode_time_s": 0.07494272105395794,
+        "lossless": true,
+        "peak_memory_mb": 12.736300468444824,
+        "total_time_s": 0.14679299481213093
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 3.082971661986214,
+        "compression_ratio_%": 38.53714577482768,
+        "decode_time_s": 0.019944098312407732,
+        "encode_time_s": 0.02103784680366516,
+        "lossless": true,
+        "peak_memory_mb": 3.8984994888305664,
+        "total_time_s": 0.04098194511607289
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.6914222057185295,
+        "compression_ratio_%": 33.642777571481616,
+        "decode_time_s": 0.21749538695439696,
+        "encode_time_s": 0.21740135364234447,
+        "lossless": true,
+        "peak_memory_mb": 26.072921752929688,
+        "total_time_s": 0.43489674059674144
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 2.958871002546286,
+        "compression_ratio_%": 36.985887531828574,
+        "decode_time_s": 0.09759179083630443,
+        "encode_time_s": 0.10158296301960945,
+        "lossless": true,
+        "peak_memory_mb": 14.332351684570312,
+        "total_time_s": 0.19917475385591388
+      },
+      "small_test.fasta": {
+        "bits_per_base": 2.92109500805153,
+        "compression_ratio_%": 36.513687600644126,
+        "decode_time_s": 0.007477603852748871,
+        "encode_time_s": 0.007830454967916012,
+        "lossless": true,
+        "peak_memory_mb": 1.4214143753051758,
+        "total_time_s": 0.015308058820664883
+      }
+    },
+    "VCSDplus_entropy": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 2.2609651905426555,
+        "compression_ratio_%": 28.262064881783193,
+        "decode_time_s": 0.02540705306455493,
+        "encode_time_s": 0.028480108361691236,
+        "lossless": true,
+        "peak_memory_mb": 5.460367202758789,
+        "total_time_s": 0.053887161426246166
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.0277926683435736,
+        "compression_ratio_%": 25.34740835429467,
+        "decode_time_s": 17.60676964512095,
+        "encode_time_s": 17.83893910003826,
+        "lossless": true,
+        "peak_memory_mb": 2007.5307836532593,
+        "total_time_s": 35.44570874515921
+      },
+      "large_test.fasta": {
+        "bits_per_base": 1.9358182180586008,
+        "compression_ratio_%": 24.19772772573251,
+        "decode_time_s": 0.0719608822837472,
+        "encode_time_s": 0.0736651299521327,
+        "lossless": true,
+        "peak_memory_mb": 12.28268814086914,
+        "total_time_s": 0.1456260122358799
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 1.9341332652540209,
+        "compression_ratio_%": 24.17666581567526,
+        "decode_time_s": 0.01998040173202753,
+        "encode_time_s": 0.020982950925827026,
+        "lossless": true,
+        "peak_memory_mb": 3.7225570678710938,
+        "total_time_s": 0.04096335265785456
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.0764946156702564,
+        "compression_ratio_%": 25.956182695878205,
+        "decode_time_s": 0.21719856886193156,
+        "encode_time_s": 0.21713101724162698,
+        "lossless": true,
+        "peak_memory_mb": 26.07601547241211,
+        "total_time_s": 0.43432958610355854
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.8641836778732036,
+        "compression_ratio_%": 10.802295973415045,
+        "decode_time_s": 0.09825504198670387,
+        "encode_time_s": 0.1021695421077311,
+        "lossless": true,
+        "peak_memory_mb": 14.34981918334961,
+        "total_time_s": 0.20042458409443498
+      },
+      "small_test.fasta": {
+        "bits_per_base": 1.5330112721417068,
+        "compression_ratio_%": 19.162640901771336,
+        "decode_time_s": 0.00728466035798192,
+        "encode_time_s": 0.0075229168869555,
+        "lossless": true,
+        "peak_memory_mb": 1.4221649169921875,
+        "total_time_s": 0.01480757724493742
+      }
+    },
+    "bz2_lvl9": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 1.4519308040434802,
+        "compression_ratio_%": 18.149135050543503,
+        "decode_time_s": 0.0003086579963564873,
+        "encode_time_s": 0.0014080069959163666,
+        "lossless": true,
+        "peak_memory_mb": 7.250489234924316,
+        "total_time_s": 0.0017166649922728539
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.185311945899138,
+        "compression_ratio_%": 27.316399323739226,
+        "decode_time_s": 0.0007994677871465683,
+        "encode_time_s": 0.0023499871604144573,
+        "lossless": true,
+        "peak_memory_mb": 7.3064470291137695,
+        "total_time_s": 0.0031494549475610256
+      },
+      "large_test.fasta": {
+        "bits_per_base": 1.2680884991030497,
+        "compression_ratio_%": 15.851106238788121,
+        "decode_time_s": 0.00022052880376577377,
+        "encode_time_s": 0.0021920432336628437,
+        "lossless": true,
+        "peak_memory_mb": 7.242611885070801,
+        "total_time_s": 0.0024125720374286175
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 1.3908603523104417,
+        "compression_ratio_%": 17.385754403880522,
+        "decode_time_s": 9.841704741120338e-05,
+        "encode_time_s": 0.00046945782378315926,
+        "lossless": true,
+        "peak_memory_mb": 7.21754264831543,
+        "total_time_s": 0.0005678748711943626
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.2874118083921275,
+        "compression_ratio_%": 28.592647604901593,
+        "decode_time_s": 9.518396109342575e-05,
+        "encode_time_s": 0.0003453618846833706,
+        "lossless": true,
+        "peak_memory_mb": 7.213043212890625,
+        "total_time_s": 0.00044054584577679634
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.18367787320357343,
+        "compression_ratio_%": 2.295973415044668,
+        "decode_time_s": 0.00011579273268580437,
+        "encode_time_s": 0.0022189700976014137,
+        "lossless": true,
+        "peak_memory_mb": 7.246004104614258,
+        "total_time_s": 0.002334762830287218
+      },
+      "small_test.fasta": {
+        "bits_per_base": 1.249597423510467,
+        "compression_ratio_%": 15.619967793880837,
+        "decode_time_s": 3.511970862746239e-05,
+        "encode_time_s": 0.0001674252562224865,
+        "lossless": true,
+        "peak_memory_mb": 7.206409454345703,
+        "total_time_s": 0.00020254496484994888
+      }
+    },
+    "gzip_lvl9": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 1.2418051854671572,
+        "compression_ratio_%": 15.522564818339465,
+        "decode_time_s": 6.124796345829964e-05,
+        "encode_time_s": 0.002083898987621069,
+        "lossless": true,
+        "peak_memory_mb": 0.33213138580322266,
+        "total_time_s": 0.0021451469510793686
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.372355779143128,
+        "compression_ratio_%": 29.6544472392891,
+        "decode_time_s": 0.000108400359749794,
+        "encode_time_s": 0.016262201126664877,
+        "lossless": true,
+        "peak_memory_mb": 0.3795461654663086,
+        "total_time_s": 0.01637060148641467
+      },
+      "large_test.fasta": {
+        "bits_per_base": 1.3912696830775364,
+        "compression_ratio_%": 17.390871038469204,
+        "decode_time_s": 4.411255940794945e-05,
+        "encode_time_s": 0.0014054789207875729,
+        "lossless": true,
+        "peak_memory_mb": 0.32531261444091797,
+        "total_time_s": 0.0014495914801955223
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 1.5062547868266531,
+        "compression_ratio_%": 18.828184835333165,
+        "decode_time_s": 3.190385177731514e-05,
+        "encode_time_s": 0.00032059429213404655,
+        "lossless": true,
+        "peak_memory_mb": 0.30197811126708984,
+        "total_time_s": 0.0003524981439113617
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.539918306721129,
+        "compression_ratio_%": 31.748978834014114,
+        "decode_time_s": 3.179209306836128e-05,
+        "encode_time_s": 0.00034848228096961975,
+        "lossless": true,
+        "peak_memory_mb": 0.29730892181396484,
+        "total_time_s": 0.00038027437403798103
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.11255448621121229,
+        "compression_ratio_%": 1.4069310776401536,
+        "decode_time_s": 3.046402707695961e-05,
+        "encode_time_s": 0.0001578889787197113,
+        "lossless": true,
+        "peak_memory_mb": 0.33123111724853516,
+        "total_time_s": 0.00018835300579667091
+      },
+      "small_test.fasta": {
+        "bits_per_base": 1.2270531400966183,
+        "compression_ratio_%": 15.338164251207727,
+        "decode_time_s": 2.2959895431995392e-05,
+        "encode_time_s": 5.84959052503109e-05,
+        "lossless": true,
+        "peak_memory_mb": 0.29177379608154297,
+        "total_time_s": 8.145580068230629e-05
+      }
+    },
+    "lzma_default": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 0.908175781415218,
+        "compression_ratio_%": 11.352197267690226,
+        "decode_time_s": 0.0001434730365872383,
+        "encode_time_s": 0.010350578930228949,
+        "lossless": true,
+        "peak_memory_mb": 93.1564884185791,
+        "total_time_s": 0.010494051966816187
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.221434167663189,
+        "compression_ratio_%": 27.76792709578986,
+        "decode_time_s": 0.0004284298047423363,
+        "encode_time_s": 0.007612759247422218,
+        "lossless": true,
+        "peak_memory_mb": 93.21418762207031,
+        "total_time_s": 0.008041189052164555
+      },
+      "large_test.fasta": {
+        "bits_per_base": 1.3171217859278452,
+        "compression_ratio_%": 16.464022324098064,
+        "decode_time_s": 0.00013684900477528572,
+        "encode_time_s": 0.004846216179430485,
+        "lossless": true,
+        "peak_memory_mb": 93.15026092529297,
+        "total_time_s": 0.0049830651842057705
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 1.5031912177687006,
+        "compression_ratio_%": 18.789890222108756,
+        "decode_time_s": 6.550410762429237e-05,
+        "encode_time_s": 0.0008277320303022861,
+        "lossless": true,
+        "peak_memory_mb": 93.12517929077148,
+        "total_time_s": 0.0008932361379265785
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.602302265131823,
+        "compression_ratio_%": 32.528778314147786,
+        "decode_time_s": 7.164804264903069e-05,
+        "encode_time_s": 0.005337961949408054,
+        "lossless": true,
+        "peak_memory_mb": 93.12077713012695,
+        "total_time_s": 0.005409609992057085
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.12981744421906694,
+        "compression_ratio_%": 1.6227180527383367,
+        "decode_time_s": 5.7375989854335785e-05,
+        "encode_time_s": 0.00259951688349247,
+        "lossless": true,
+        "peak_memory_mb": 93.15338706970215,
+        "total_time_s": 0.0026568928733468056
+      },
+      "small_test.fasta": {
+        "bits_per_base": 1.4685990338164252,
+        "compression_ratio_%": 18.357487922705314,
+        "decode_time_s": 3.232015296816826e-05,
+        "encode_time_s": 0.004803671035915613,
+        "lossless": true,
+        "peak_memory_mb": 93.11400604248047,
+        "total_time_s": 0.004835991188883781
+      }
+    },
+    "zlib_lvl9": {
+      "codon_conserved_variation_test.fasta": {
+        "bits_per_base": 1.2377447870405618,
+        "compression_ratio_%": 15.471809838007022,
+        "decode_time_s": 3.977632150053978e-05,
+        "encode_time_s": 0.0020193862728774548,
+        "lossless": true,
+        "peak_memory_mb": 0.33213138580322266,
+        "total_time_s": 0.0020591625943779945
+      },
+      "lambda_phage.fasta": {
+        "bits_per_base": 2.3703764793204405,
+        "compression_ratio_%": 29.629705991505507,
+        "decode_time_s": 9.611155837774277e-05,
+        "encode_time_s": 0.016100329346954823,
+        "lossless": true,
+        "peak_memory_mb": 0.3795461654663086,
+        "total_time_s": 0.016196440905332565
+      },
+      "large_test.fasta": {
+        "bits_per_base": 1.3864859477775564,
+        "compression_ratio_%": 17.331074347219456,
+        "decode_time_s": 2.9919669032096863e-05,
+        "encode_time_s": 0.001350743230432272,
+        "lossless": true,
+        "peak_memory_mb": 0.32531261444091797,
+        "total_time_s": 0.0013806628994643688
+      },
+      "medium_test.fasta": {
+        "bits_per_base": 1.494000510594843,
+        "compression_ratio_%": 18.675006382435537,
+        "decode_time_s": 1.3792421668767929e-05,
+        "encode_time_s": 0.0002852650359272957,
+        "lossless": true,
+        "peak_memory_mb": 0.30197811126708984,
+        "total_time_s": 0.0002990574575960636
+      },
+      "phiX174.fasta": {
+        "bits_per_base": 2.5220943186037874,
+        "compression_ratio_%": 31.526178982547343,
+        "decode_time_s": 1.3729091733694077e-05,
+        "encode_time_s": 0.0003153928555548191,
+        "lossless": true,
+        "peak_memory_mb": 0.29730892181396484,
+        "total_time_s": 0.0003291219472885132
+      },
+      "repetitive_codon_test.fasta": {
+        "bits_per_base": 0.10841137628932718,
+        "compression_ratio_%": 1.3551422036165897,
+        "decode_time_s": 1.662410795688629e-05,
+        "encode_time_s": 0.00013782503083348274,
+        "lossless": true,
+        "peak_memory_mb": 0.33123111724853516,
+        "total_time_s": 0.00015444913879036903
+      },
+      "small_test.fasta": {
+        "bits_per_base": 1.1884057971014492,
+        "compression_ratio_%": 14.855072463768115,
+        "decode_time_s": 5.791895091533661e-06,
+        "encode_time_s": 2.9664020985364914e-05,
+        "lossless": true,
+        "peak_memory_mb": 0.29177379608154297,
+        "total_time_s": 3.5455916076898575e-05
+      }
+    }
+  },
+  "benchmark_metadata": {
+    "timestamp": "2026-05-04T12:25:24",
+    "total_runtime_seconds": 76.05658430885524
+  }
+}

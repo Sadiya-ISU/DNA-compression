@@ -1,0 +1,86 @@
+INFORMATION-THEORETIC ANALYSIS
+==============================
+
+=== codon_conserved_variation_test.fasta ===
+length:    23643 bp
+GC%:       51.28%
+composition: A=0.2358, C=0.2619, G=0.2509, T=0.2513
+  H_0: 1.9990 bits/symbol  (lower bound at order 0)
+  H_1: 1.9965 bits/symbol  (lower bound at order 1)
+  H_2: 1.9684 bits/symbol  (lower bound at order 2)
+  H_3: 1.8808 bits/symbol  (lower bound at order 3)
+  H_4: 1.6333 bits/symbol  (lower bound at order 4)
+  H_5: 1.1882 bits/symbol  (lower bound at order 5)
+
+=== large_test.fasta ===
+length:    20068 bp
+GC%:       51.82%
+composition: A=0.2597, C=0.2366, G=0.2816, T=0.2220
+  H_0: 1.9941 bits/symbol  (lower bound at order 0)
+  H_1: 1.9877 bits/symbol  (lower bound at order 1)
+  H_2: 1.9361 bits/symbol  (lower bound at order 2)
+  H_3: 1.8229 bits/symbol  (lower bound at order 3)
+  H_4: 1.4951 bits/symbol  (lower bound at order 4)
+  H_5: 1.0886 bits/symbol  (lower bound at order 5)
+
+=== medium_test.fasta ===
+length:    7834 bp
+GC%:       56.79%
+composition: A=0.2259, C=0.2319, G=0.3360, T=0.2062
+  H_0: 1.9722 bits/symbol  (lower bound at order 0)
+  H_1: 1.9622 bits/symbol  (lower bound at order 1)
+  H_2: 1.8702 bits/symbol  (lower bound at order 2)
+  H_3: 1.6666 bits/symbol  (lower bound at order 3)
+  H_4: 1.3390 bits/symbol  (lower bound at order 4)
+  H_5: 0.8725 bits/symbol  (lower bound at order 5)
+
+=== repetitive_codon_test.fasta ===
+length:    23171 bp
+GC%:       48.12%
+composition: A=0.2670, C=0.2093, G=0.2718, T=0.2519
+  H_0: 1.9928 bits/symbol  (lower bound at order 0)
+  H_1: 1.9747 bits/symbol  (lower bound at order 1)
+  H_2: 1.9093 bits/symbol  (lower bound at order 2)
+  H_3: 1.5425 bits/symbol  (lower bound at order 3)
+  H_4: 0.7524 bits/symbol  (lower bound at order 4)
+  H_5: 0.2562 bits/symbol  (lower bound at order 5)
+
+=== small_test.fasta ===
+length:    2484 bp
+GC%:       50.44%
+composition: A=0.2766, C=0.2609, G=0.2436, T=0.2190
+  H_0: 1.9947 bits/symbol  (lower bound at order 0)
+  H_1: 1.9441 bits/symbol  (lower bound at order 1)
+  H_2: 1.6840 bits/symbol  (lower bound at order 2)
+  H_3: 1.3187 bits/symbol  (lower bound at order 3)
+  H_4: 0.6666 bits/symbol  (lower bound at order 4)
+  H_5: 0.2363 bits/symbol  (lower bound at order 5)
+
+=== phiX174.fasta ===
+length:    5386 bp
+GC%:       44.76%
+composition: A=0.2397, C=0.2148, G=0.2328, T=0.3127
+  H_0: 1.9846 bits/symbol  (lower bound at order 0)
+  H_1: 1.9671 bits/symbol  (lower bound at order 1)
+  H_2: 1.9315 bits/symbol  (lower bound at order 2)
+  H_3: 1.9000 bits/symbol  (lower bound at order 3)
+  H_4: 1.7973 bits/symbol  (lower bound at order 4)
+  H_5: 1.4540 bits/symbol  (lower bound at order 5)
+
+=== lambda_phage.fasta ===
+length:    48502 bp
+GC%:       49.86%
+composition: A=0.2543, C=0.2343, G=0.2643, T=0.2471
+  H_0: 1.9986 bits/symbol  (lower bound at order 0)
+  H_1: 1.9844 bits/symbol  (lower bound at order 1)
+  H_2: 1.9632 bits/symbol  (lower bound at order 2)
+  H_3: 1.9505 bits/symbol  (lower bound at order 3)
+  H_4: 1.9345 bits/symbol  (lower bound at order 4)
+  H_5: 1.8917 bits/symbol  (lower bound at order 5)
+
+Reading guide:
+  - For i.i.d. uniform DNA the floor is exactly 2.0 bits/symbol (H_0).
+  - H_k is non-increasing in k; the gap between H_k and the codec's
+    achieved bpb measures how much higher-order structure that codec
+    is leaving on the table.
+  - 2-bit packing achieves H_0 exactly (with negligible padding).

@@ -1,0 +1,300 @@
+MEMORY USAGE ANALYSIS
+====================
+
+Dataset: codon_conserved_variation_test.fasta
+VCSDplus:
+  Peak Memory Usage:   6.09 MB
+  Dictionary Size:     158.29 KB
+  Memory per Base:     0.000258 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   5.46 MB
+  Dictionary Size:     158.29 KB
+  Memory per Base:     0.000231 MB
+DNACompress:
+  Peak Memory Usage:   4.31 MB
+  Dictionary Size:     184.66 KB
+  Memory per Base:     0.000182 MB
+LZ78_style:
+  Peak Memory Usage:   2.79 MB
+  Dictionary Size:     23.09 KB
+  Memory per Base:     0.000118 MB
+LZSS:
+  Peak Memory Usage:   0.55 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000023 MB
+2bit_pack:
+  Peak Memory Usage:   0.22 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000009 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000014 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000014 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.25 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000307 MB
+lzma_default:
+  Peak Memory Usage:   93.16 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.003940 MB
+
+Dataset: large_test.fasta
+VCSDplus:
+  Peak Memory Usage:   12.74 MB
+  Dictionary Size:     509.65 KB
+  Memory per Base:     0.000635 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   12.28 MB
+  Dictionary Size:     509.65 KB
+  Memory per Base:     0.000612 MB
+DNACompress:
+  Peak Memory Usage:   4.76 MB
+  Dictionary Size:     149.94 KB
+  Memory per Base:     0.000237 MB
+LZ78_style:
+  Peak Memory Usage:   2.35 MB
+  Dictionary Size:     19.59 KB
+  Memory per Base:     0.000117 MB
+LZSS:
+  Peak Memory Usage:   0.54 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000027 MB
+2bit_pack:
+  Peak Memory Usage:   0.19 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000010 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000016 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000016 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.24 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000361 MB
+lzma_default:
+  Peak Memory Usage:   93.15 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.004642 MB
+
+Dataset: medium_test.fasta
+VCSDplus:
+  Peak Memory Usage:   3.90 MB
+  Dictionary Size:     138.99 KB
+  Memory per Base:     0.000498 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   3.72 MB
+  Dictionary Size:     138.99 KB
+  Memory per Base:     0.000475 MB
+DNACompress:
+  Peak Memory Usage:   2.14 MB
+  Dictionary Size:     61.15 KB
+  Memory per Base:     0.000274 MB
+LZ78_style:
+  Peak Memory Usage:   0.98 MB
+  Dictionary Size:     7.65 KB
+  Memory per Base:     0.000125 MB
+LZSS:
+  Peak Memory Usage:   0.22 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000028 MB
+2bit_pack:
+  Peak Memory Usage:   0.08 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000010 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.30 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000039 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.30 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000039 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.22 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000921 MB
+lzma_default:
+  Peak Memory Usage:   93.13 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.011887 MB
+
+Dataset: repetitive_codon_test.fasta
+VCSDplus:
+  Peak Memory Usage:   14.33 MB
+  Dictionary Size:     710.00 KB
+  Memory per Base:     0.000619 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   14.35 MB
+  Dictionary Size:     710.00 KB
+  Memory per Base:     0.000619 MB
+DNACompress:
+  Peak Memory Usage:   1.46 MB
+  Dictionary Size:     170.65 KB
+  Memory per Base:     0.000063 MB
+LZ78_style:
+  Peak Memory Usage:   2.42 MB
+  Dictionary Size:     22.63 KB
+  Memory per Base:     0.000105 MB
+LZSS:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000014 MB
+2bit_pack:
+  Peak Memory Usage:   0.22 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000009 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000014 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.33 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000014 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.25 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000313 MB
+lzma_default:
+  Peak Memory Usage:   93.15 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.004020 MB
+
+Dataset: small_test.fasta
+VCSDplus:
+  Peak Memory Usage:   1.42 MB
+  Dictionary Size:     52.48 KB
+  Memory per Base:     0.000572 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   1.42 MB
+  Dictionary Size:     52.48 KB
+  Memory per Base:     0.000573 MB
+DNACompress:
+  Peak Memory Usage:   0.55 MB
+  Dictionary Size:     19.35 KB
+  Memory per Base:     0.000222 MB
+LZ78_style:
+  Peak Memory Usage:   0.35 MB
+  Dictionary Size:     2.42 KB
+  Memory per Base:     0.000141 MB
+LZSS:
+  Peak Memory Usage:   0.06 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000024 MB
+2bit_pack:
+  Peak Memory Usage:   0.02 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000009 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.29 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000117 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.29 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000117 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.21 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.002901 MB
+lzma_default:
+  Peak Memory Usage:   93.11 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.037486 MB
+
+Dataset: phiX174.fasta
+VCSDplus:
+  Peak Memory Usage:   26.07 MB
+  Dictionary Size:     1574.13 KB
+  Memory per Base:     0.004841 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   26.08 MB
+  Dictionary Size:     1574.13 KB
+  Memory per Base:     0.004841 MB
+DNACompress:
+  Peak Memory Usage:   2.28 MB
+  Dictionary Size:     42.02 KB
+  Memory per Base:     0.000424 MB
+LZ78_style:
+  Peak Memory Usage:   0.76 MB
+  Dictionary Size:     5.26 KB
+  Memory per Base:     0.000142 MB
+LZSS:
+  Peak Memory Usage:   0.20 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000037 MB
+2bit_pack:
+  Peak Memory Usage:   0.05 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000010 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.30 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000055 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.30 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000055 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.21 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.001339 MB
+lzma_default:
+  Peak Memory Usage:   93.12 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.017289 MB
+
+Dataset: lambda_phage.fasta
+VCSDplus:
+  Peak Memory Usage:   2007.51 MB
+  Dictionary Size:     127630.89 KB
+  Memory per Base:     0.041390 MB
+VCSDplus_entropy:
+  Peak Memory Usage:   2007.53 MB
+  Dictionary Size:     127630.89 KB
+  Memory per Base:     0.041391 MB
+DNACompress:
+  Peak Memory Usage:   14.20 MB
+  Dictionary Size:     378.87 KB
+  Memory per Base:     0.000293 MB
+LZ78_style:
+  Peak Memory Usage:   5.57 MB
+  Dictionary Size:     47.36 KB
+  Memory per Base:     0.000115 MB
+LZSS:
+  Peak Memory Usage:   1.73 MB
+  Dictionary Size:     1.00 KB
+  Memory per Base:     0.000036 MB
+2bit_pack:
+  Peak Memory Usage:   0.45 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000009 MB
+gzip_lvl9:
+  Peak Memory Usage:   0.38 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000008 MB
+zlib_lvl9:
+  Peak Memory Usage:   0.38 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000008 MB
+bz2_lvl9:
+  Peak Memory Usage:   7.31 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.000151 MB
+lzma_default:
+  Peak Memory Usage:   93.21 MB
+  Dictionary Size:     0.00 KB
+  Memory per Base:     0.001922 MB
+
+Analysis:
+  Lower peak memory and smaller dictionary overhead are preferable for large datasets.
+  VCSD+ uses a trie dictionary; LZSS uses a fixed sliding window.

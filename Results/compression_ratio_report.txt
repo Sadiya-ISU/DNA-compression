@@ -1,0 +1,914 @@
+COMPRESSION RATIO ANALYSIS
+=========================
+
+Algorithm: VCSDplus
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    8484 bytes
+  Compression Ratio:  35.88%
+  Bits per Base:      2.871
+  Encode Time:        0.0301 s
+  Decode Time:        0.0253 s
+  Peak Memory:        6.09 MB
+  Dictionary Size:    158.29 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    6682 bytes
+  Compression Ratio:  28.26%
+  Bits per Base:      2.261
+  Encode Time:        0.0285 s
+  Decode Time:        0.0254 s
+  Peak Memory:        5.46 MB
+  Dictionary Size:    158.29 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    9541 bytes
+  Compression Ratio:  40.35%
+  Bits per Base:      3.228
+  Encode Time:        0.0234 s
+  Decode Time:        0.0012 s
+  Peak Memory:        4.31 MB
+  Dictionary Size:    184.66 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    14379 bytes
+  Compression Ratio:  60.82%
+  Bits per Base:      4.865
+  Encode Time:        0.0166 s
+  Decode Time:        0.0040 s
+  Peak Memory:        2.79 MB
+  Dictionary Size:    23.09 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    9708 bytes
+  Compression Ratio:  41.06%
+  Bits per Base:      3.285
+  Encode Time:        0.3366 s
+  Decode Time:        0.0013 s
+  Peak Memory:        0.55 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    5915 bytes
+  Compression Ratio:  25.02%
+  Bits per Base:      2.001
+  Encode Time:        0.0012 s
+  Decode Time:        0.0013 s
+  Peak Memory:        0.22 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    3670 bytes
+  Compression Ratio:  15.52%
+  Bits per Base:      1.242
+  Encode Time:        0.0021 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    3658 bytes
+  Compression Ratio:  15.47%
+  Bits per Base:      1.238
+  Encode Time:        0.0020 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    4291 bytes
+  Compression Ratio:  18.15%
+  Bits per Base:      1.452
+  Encode Time:        0.0014 s
+  Decode Time:        0.0003 s
+  Peak Memory:        7.25 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: codon_conserved_variation_test.fasta
+  Original Size:      23643 bytes
+  Compressed Size:    2684 bytes
+  Compression Ratio:  11.35%
+  Bits per Base:      0.908
+  Encode Time:        0.0104 s
+  Decode Time:        0.0001 s
+  Peak Memory:        93.16 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    7863 bytes
+  Compression Ratio:  39.18%
+  Bits per Base:      3.135
+  Encode Time:        0.0749 s
+  Decode Time:        0.0719 s
+  Peak Memory:        12.74 MB
+  Dictionary Size:    509.65 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    4856 bytes
+  Compression Ratio:  24.20%
+  Bits per Base:      1.936
+  Encode Time:        0.0737 s
+  Decode Time:        0.0720 s
+  Peak Memory:        12.28 MB
+  Dictionary Size:    509.65 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    14247 bytes
+  Compression Ratio:  70.99%
+  Bits per Base:      5.679
+  Encode Time:        0.0282 s
+  Decode Time:        0.0012 s
+  Peak Memory:        4.76 MB
+  Dictionary Size:    149.94 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    11945 bytes
+  Compression Ratio:  59.52%
+  Bits per Base:      4.762
+  Encode Time:        0.0061 s
+  Decode Time:        0.0032 s
+  Peak Memory:        2.35 MB
+  Dictionary Size:    19.59 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    10312 bytes
+  Compression Ratio:  51.39%
+  Bits per Base:      4.111
+  Encode Time:        0.3954 s
+  Decode Time:        0.0013 s
+  Peak Memory:        0.54 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    5021 bytes
+  Compression Ratio:  25.02%
+  Bits per Base:      2.002
+  Encode Time:        0.0010 s
+  Decode Time:        0.0011 s
+  Peak Memory:        0.19 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    3490 bytes
+  Compression Ratio:  17.39%
+  Bits per Base:      1.391
+  Encode Time:        0.0014 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    3478 bytes
+  Compression Ratio:  17.33%
+  Bits per Base:      1.386
+  Encode Time:        0.0014 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    3181 bytes
+  Compression Ratio:  15.85%
+  Bits per Base:      1.268
+  Encode Time:        0.0022 s
+  Decode Time:        0.0002 s
+  Peak Memory:        7.24 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: large_test.fasta
+  Original Size:      20068 bytes
+  Compressed Size:    3304 bytes
+  Compression Ratio:  16.46%
+  Bits per Base:      1.317
+  Encode Time:        0.0048 s
+  Decode Time:        0.0001 s
+  Peak Memory:        93.15 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    3019 bytes
+  Compression Ratio:  38.54%
+  Bits per Base:      3.083
+  Encode Time:        0.0210 s
+  Decode Time:        0.0199 s
+  Peak Memory:        3.90 MB
+  Dictionary Size:    138.99 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1894 bytes
+  Compression Ratio:  24.18%
+  Bits per Base:      1.934
+  Encode Time:        0.0210 s
+  Decode Time:        0.0200 s
+  Peak Memory:        3.72 MB
+  Dictionary Size:    138.99 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    6891 bytes
+  Compression Ratio:  87.96%
+  Bits per Base:      7.037
+  Encode Time:        0.0106 s
+  Decode Time:        0.0005 s
+  Peak Memory:        2.14 MB
+  Dictionary Size:    61.15 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    5141 bytes
+  Compression Ratio:  65.62%
+  Bits per Base:      5.250
+  Encode Time:        0.0025 s
+  Decode Time:        0.0014 s
+  Peak Memory:        0.98 MB
+  Dictionary Size:    7.65 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    4195 bytes
+  Compression Ratio:  53.55%
+  Bits per Base:      4.284
+  Encode Time:        0.1514 s
+  Decode Time:        0.0005 s
+  Peak Memory:        0.22 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1963 bytes
+  Compression Ratio:  25.06%
+  Bits per Base:      2.005
+  Encode Time:        0.0004 s
+  Decode Time:        0.0004 s
+  Peak Memory:        0.08 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1475 bytes
+  Compression Ratio:  18.83%
+  Bits per Base:      1.506
+  Encode Time:        0.0003 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.30 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1463 bytes
+  Compression Ratio:  18.68%
+  Bits per Base:      1.494
+  Encode Time:        0.0003 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.30 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1362 bytes
+  Compression Ratio:  17.39%
+  Bits per Base:      1.391
+  Encode Time:        0.0005 s
+  Decode Time:        0.0001 s
+  Peak Memory:        7.22 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: medium_test.fasta
+  Original Size:      7834 bytes
+  Compressed Size:    1472 bytes
+  Compression Ratio:  18.79%
+  Bits per Base:      1.503
+  Encode Time:        0.0008 s
+  Decode Time:        0.0001 s
+  Peak Memory:        93.13 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    8570 bytes
+  Compression Ratio:  36.99%
+  Bits per Base:      2.959
+  Encode Time:        0.1016 s
+  Decode Time:        0.0976 s
+  Peak Memory:        14.33 MB
+  Dictionary Size:    710.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    2503 bytes
+  Compression Ratio:  10.80%
+  Bits per Base:      0.864
+  Encode Time:        0.1022 s
+  Decode Time:        0.0983 s
+  Peak Memory:        14.35 MB
+  Dictionary Size:    710.00 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    1253 bytes
+  Compression Ratio:  5.41%
+  Bits per Base:      0.433
+  Encode Time:        0.0343 s
+  Decode Time:        0.0006 s
+  Peak Memory:        1.46 MB
+  Dictionary Size:    170.65 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    11368 bytes
+  Compression Ratio:  49.06%
+  Bits per Base:      3.925
+  Encode Time:        0.0068 s
+  Decode Time:        0.0035 s
+  Peak Memory:        2.42 MB
+  Dictionary Size:    22.63 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    3394 bytes
+  Compression Ratio:  14.65%
+  Bits per Base:      1.172
+  Encode Time:        0.1808 s
+  Decode Time:        0.0008 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    5797 bytes
+  Compression Ratio:  25.02%
+  Bits per Base:      2.001
+  Encode Time:        0.0011 s
+  Decode Time:        0.0013 s
+  Peak Memory:        0.22 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    326 bytes
+  Compression Ratio:  1.41%
+  Bits per Base:      0.113
+  Encode Time:        0.0002 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    314 bytes
+  Compression Ratio:  1.36%
+  Bits per Base:      0.108
+  Encode Time:        0.0001 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.33 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    532 bytes
+  Compression Ratio:  2.30%
+  Bits per Base:      0.184
+  Encode Time:        0.0022 s
+  Decode Time:        0.0001 s
+  Peak Memory:        7.25 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: repetitive_codon_test.fasta
+  Original Size:      23171 bytes
+  Compressed Size:    376 bytes
+  Compression Ratio:  1.62%
+  Bits per Base:      0.130
+  Encode Time:        0.0026 s
+  Decode Time:        0.0001 s
+  Peak Memory:        93.15 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    907 bytes
+  Compression Ratio:  36.51%
+  Bits per Base:      2.921
+  Encode Time:        0.0078 s
+  Decode Time:        0.0075 s
+  Peak Memory:        1.42 MB
+  Dictionary Size:    52.48 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    476 bytes
+  Compression Ratio:  19.16%
+  Bits per Base:      1.533
+  Encode Time:        0.0075 s
+  Decode Time:        0.0073 s
+  Peak Memory:        1.42 MB
+  Dictionary Size:    52.48 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    1767 bytes
+  Compression Ratio:  71.14%
+  Bits per Base:      5.691
+  Encode Time:        0.0031 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.55 MB
+  Dictionary Size:    19.35 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    1713 bytes
+  Compression Ratio:  68.96%
+  Bits per Base:      5.517
+  Encode Time:        0.0008 s
+  Decode Time:        0.0005 s
+  Peak Memory:        0.35 MB
+  Dictionary Size:    2.42 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    1065 bytes
+  Compression Ratio:  42.87%
+  Bits per Base:      3.430
+  Encode Time:        0.0334 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.06 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    625 bytes
+  Compression Ratio:  25.16%
+  Bits per Base:      2.013
+  Encode Time:        0.0001 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.02 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    381 bytes
+  Compression Ratio:  15.34%
+  Bits per Base:      1.227
+  Encode Time:        0.0001 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.29 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    369 bytes
+  Compression Ratio:  14.86%
+  Bits per Base:      1.188
+  Encode Time:        0.0000 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.29 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    388 bytes
+  Compression Ratio:  15.62%
+  Bits per Base:      1.250
+  Encode Time:        0.0002 s
+  Decode Time:        0.0000 s
+  Peak Memory:        7.21 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: small_test.fasta
+  Original Size:      2484 bytes
+  Compressed Size:    456 bytes
+  Compression Ratio:  18.36%
+  Bits per Base:      1.469
+  Encode Time:        0.0048 s
+  Decode Time:        0.0000 s
+  Peak Memory:        93.11 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1812 bytes
+  Compression Ratio:  33.64%
+  Bits per Base:      2.691
+  Encode Time:        0.2174 s
+  Decode Time:        0.2175 s
+  Peak Memory:        26.07 MB
+  Dictionary Size:    1574.13 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1398 bytes
+  Compression Ratio:  25.96%
+  Bits per Base:      2.076
+  Encode Time:        0.2171 s
+  Decode Time:        0.2172 s
+  Peak Memory:        26.08 MB
+  Dictionary Size:    1574.13 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    7780 bytes
+  Compression Ratio:  144.45%
+  Bits per Base:      11.556
+  Encode Time:        0.0144 s
+  Decode Time:        0.0005 s
+  Peak Memory:        2.28 MB
+  Dictionary Size:    42.02 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    3951 bytes
+  Compression Ratio:  73.36%
+  Bits per Base:      5.869
+  Encode Time:        0.0017 s
+  Decode Time:        0.0010 s
+  Peak Memory:        0.76 MB
+  Dictionary Size:    5.26 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    4292 bytes
+  Compression Ratio:  79.69%
+  Bits per Base:      6.375
+  Encode Time:        0.1278 s
+  Decode Time:        0.0005 s
+  Peak Memory:        0.20 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1351 bytes
+  Compression Ratio:  25.08%
+  Bits per Base:      2.007
+  Encode Time:        0.0003 s
+  Decode Time:        0.0003 s
+  Peak Memory:        0.05 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1710 bytes
+  Compression Ratio:  31.75%
+  Bits per Base:      2.540
+  Encode Time:        0.0003 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.30 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1698 bytes
+  Compression Ratio:  31.53%
+  Bits per Base:      2.522
+  Encode Time:        0.0003 s
+  Decode Time:        0.0000 s
+  Peak Memory:        0.30 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1540 bytes
+  Compression Ratio:  28.59%
+  Bits per Base:      2.287
+  Encode Time:        0.0003 s
+  Decode Time:        0.0001 s
+  Peak Memory:        7.21 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: phiX174.fasta
+  Original Size:      5386 bytes
+  Compressed Size:    1752 bytes
+  Compression Ratio:  32.53%
+  Bits per Base:      2.602
+  Encode Time:        0.0053 s
+  Decode Time:        0.0001 s
+  Peak Memory:        93.12 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    16185 bytes
+  Compression Ratio:  33.37%
+  Bits per Base:      2.670
+  Encode Time:        18.1461 s
+  Decode Time:        17.8521 s
+  Peak Memory:        2007.51 MB
+  Dictionary Size:    127630.89 KB
+  Lossless:           YES
+
+Algorithm: VCSDplus_entropy
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    12294 bytes
+  Compression Ratio:  25.35%
+  Bits per Base:      2.028
+  Encode Time:        17.8389 s
+  Decode Time:        17.6068 s
+  Peak Memory:        2007.53 MB
+  Dictionary Size:    127630.89 KB
+  Lossless:           YES
+
+Algorithm: DNACompress
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    47345 bytes
+  Compression Ratio:  97.61%
+  Bits per Base:      7.809
+  Encode Time:        0.0490 s
+  Decode Time:        0.0044 s
+  Peak Memory:        14.20 MB
+  Dictionary Size:    378.87 KB
+  Lossless:           YES
+
+Algorithm: LZ78_style
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    30165 bytes
+  Compression Ratio:  62.19%
+  Bits per Base:      4.975
+  Encode Time:        0.0152 s
+  Decode Time:        0.0089 s
+  Peak Memory:        5.57 MB
+  Dictionary Size:    47.36 KB
+  Lossless:           YES
+
+Algorithm: LZSS
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    37363 bytes
+  Compression Ratio:  77.03%
+  Bits per Base:      6.163
+  Encode Time:        1.2491 s
+  Decode Time:        0.0042 s
+  Peak Memory:        1.73 MB
+  Dictionary Size:    1.00 KB
+  Lossless:           YES
+
+Algorithm: 2bit_pack
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    12130 bytes
+  Compression Ratio:  25.01%
+  Bits per Base:      2.001
+  Encode Time:        0.0025 s
+  Decode Time:        0.0027 s
+  Peak Memory:        0.45 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: gzip_lvl9
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    14383 bytes
+  Compression Ratio:  29.65%
+  Bits per Base:      2.372
+  Encode Time:        0.0163 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.38 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: zlib_lvl9
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    14371 bytes
+  Compression Ratio:  29.63%
+  Bits per Base:      2.370
+  Encode Time:        0.0161 s
+  Decode Time:        0.0001 s
+  Peak Memory:        0.38 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: bz2_lvl9
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    13249 bytes
+  Compression Ratio:  27.32%
+  Bits per Base:      2.185
+  Encode Time:        0.0023 s
+  Decode Time:        0.0008 s
+  Peak Memory:        7.31 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Algorithm: lzma_default
+Dataset: lambda_phage.fasta
+  Original Size:      48502 bytes
+  Compressed Size:    13468 bytes
+  Compression Ratio:  27.77%
+  Bits per Base:      2.221
+  Encode Time:        0.0076 s
+  Decode Time:        0.0004 s
+  Peak Memory:        93.21 MB
+  Dictionary Size:    0.00 KB
+  Lossless:           YES
+
+Summary Table:
+VCSDplus     | codon_conserved_variation_test.fasta |   35.88% |  2.871 bpb
+VCSDplus_entropy | codon_conserved_variation_test.fasta |   28.26% |  2.261 bpb
+DNACompress  | codon_conserved_variation_test.fasta |   40.35% |  3.228 bpb
+LZ78_style   | codon_conserved_variation_test.fasta |   60.82% |  4.865 bpb
+LZSS         | codon_conserved_variation_test.fasta |   41.06% |  3.285 bpb
+2bit_pack    | codon_conserved_variation_test.fasta |   25.02% |  2.001 bpb
+gzip_lvl9    | codon_conserved_variation_test.fasta |   15.52% |  1.242 bpb
+zlib_lvl9    | codon_conserved_variation_test.fasta |   15.47% |  1.238 bpb
+bz2_lvl9     | codon_conserved_variation_test.fasta |   18.15% |  1.452 bpb
+lzma_default | codon_conserved_variation_test.fasta |   11.35% |  0.908 bpb
+VCSDplus     | large_test.fasta |   39.18% |  3.135 bpb
+VCSDplus_entropy | large_test.fasta |   24.20% |  1.936 bpb
+DNACompress  | large_test.fasta |   70.99% |  5.679 bpb
+LZ78_style   | large_test.fasta |   59.52% |  4.762 bpb
+LZSS         | large_test.fasta |   51.39% |  4.111 bpb
+2bit_pack    | large_test.fasta |   25.02% |  2.002 bpb
+gzip_lvl9    | large_test.fasta |   17.39% |  1.391 bpb
+zlib_lvl9    | large_test.fasta |   17.33% |  1.386 bpb
+bz2_lvl9     | large_test.fasta |   15.85% |  1.268 bpb
+lzma_default | large_test.fasta |   16.46% |  1.317 bpb
+VCSDplus     | medium_test.fasta |   38.54% |  3.083 bpb
+VCSDplus_entropy | medium_test.fasta |   24.18% |  1.934 bpb
+DNACompress  | medium_test.fasta |   87.96% |  7.037 bpb
+LZ78_style   | medium_test.fasta |   65.62% |  5.250 bpb
+LZSS         | medium_test.fasta |   53.55% |  4.284 bpb
+2bit_pack    | medium_test.fasta |   25.06% |  2.005 bpb
+gzip_lvl9    | medium_test.fasta |   18.83% |  1.506 bpb
+zlib_lvl9    | medium_test.fasta |   18.68% |  1.494 bpb
+bz2_lvl9     | medium_test.fasta |   17.39% |  1.391 bpb
+lzma_default | medium_test.fasta |   18.79% |  1.503 bpb
+VCSDplus     | repetitive_codon_test.fasta |   36.99% |  2.959 bpb
+VCSDplus_entropy | repetitive_codon_test.fasta |   10.80% |  0.864 bpb
+DNACompress  | repetitive_codon_test.fasta |    5.41% |  0.433 bpb
+LZ78_style   | repetitive_codon_test.fasta |   49.06% |  3.925 bpb
+LZSS         | repetitive_codon_test.fasta |   14.65% |  1.172 bpb
+2bit_pack    | repetitive_codon_test.fasta |   25.02% |  2.001 bpb
+gzip_lvl9    | repetitive_codon_test.fasta |    1.41% |  0.113 bpb
+zlib_lvl9    | repetitive_codon_test.fasta |    1.36% |  0.108 bpb
+bz2_lvl9     | repetitive_codon_test.fasta |    2.30% |  0.184 bpb
+lzma_default | repetitive_codon_test.fasta |    1.62% |  0.130 bpb
+VCSDplus     | small_test.fasta |   36.51% |  2.921 bpb
+VCSDplus_entropy | small_test.fasta |   19.16% |  1.533 bpb
+DNACompress  | small_test.fasta |   71.14% |  5.691 bpb
+LZ78_style   | small_test.fasta |   68.96% |  5.517 bpb
+LZSS         | small_test.fasta |   42.87% |  3.430 bpb
+2bit_pack    | small_test.fasta |   25.16% |  2.013 bpb
+gzip_lvl9    | small_test.fasta |   15.34% |  1.227 bpb
+zlib_lvl9    | small_test.fasta |   14.86% |  1.188 bpb
+bz2_lvl9     | small_test.fasta |   15.62% |  1.250 bpb
+lzma_default | small_test.fasta |   18.36% |  1.469 bpb
+VCSDplus     | phiX174.fasta    |   33.64% |  2.691 bpb
+VCSDplus_entropy | phiX174.fasta    |   25.96% |  2.076 bpb
+DNACompress  | phiX174.fasta    |  144.45% | 11.556 bpb
+LZ78_style   | phiX174.fasta    |   73.36% |  5.869 bpb
+LZSS         | phiX174.fasta    |   79.69% |  6.375 bpb
+2bit_pack    | phiX174.fasta    |   25.08% |  2.007 bpb
+gzip_lvl9    | phiX174.fasta    |   31.75% |  2.540 bpb
+zlib_lvl9    | phiX174.fasta    |   31.53% |  2.522 bpb
+bz2_lvl9     | phiX174.fasta    |   28.59% |  2.287 bpb
+lzma_default | phiX174.fasta    |   32.53% |  2.602 bpb
+VCSDplus     | lambda_phage.fasta |   33.37% |  2.670 bpb
+VCSDplus_entropy | lambda_phage.fasta |   25.35% |  2.028 bpb
+DNACompress  | lambda_phage.fasta |   97.61% |  7.809 bpb
+LZ78_style   | lambda_phage.fasta |   62.19% |  4.975 bpb
+LZSS         | lambda_phage.fasta |   77.03% |  6.163 bpb
+2bit_pack    | lambda_phage.fasta |   25.01% |  2.001 bpb
+gzip_lvl9    | lambda_phage.fasta |   29.65% |  2.372 bpb
+zlib_lvl9    | lambda_phage.fasta |   29.63% |  2.370 bpb
+bz2_lvl9     | lambda_phage.fasta |   27.32% |  2.185 bpb
+lzma_default | lambda_phage.fasta |   27.77% |  2.221 bpb

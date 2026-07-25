@@ -1,0 +1,184 @@
+VCSD+ ABLATION STUDY
+====================
+
+Dataset: codon_conserved_variation_test.fasta
+  Baseline (no flags): 8377 B  ratio=35.43%  bpb=2.834
+  All configurations (sorted by compressed size):
+    use_token_entropy                                                6501 B   ratio= 27.50%   bpb=2.200   -22.39%   lossless=YES
+    sequence_ordering+use_token_entropy                              6682 B   ratio= 28.26%   bpb=2.261   -20.23%   lossless=YES
+    compact_baseline                                                 8377 B   ratio= 35.43%   bpb=2.834    +0.00%   lossless=YES
+    sequence_ordering                                                8484 B   ratio= 35.88%   bpb=2.871    +1.28%   lossless=YES
+    use_reverse_complement                                          13787 B   ratio= 58.31%   bpb=4.665   +64.58%   lossless=YES
+    use_reverse_complement+use_token_entropy                        13787 B   ratio= 58.31%   bpb=4.665   +64.58%   lossless=YES
+    sequence_ordering+use_reverse_complement                        15986 B   ratio= 67.61%   bpb=5.409   +90.83%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy      15986 B   ratio= 67.61%   bpb=5.409   +90.83%   lossless=YES
+    use_approximate                                                 16462 B   ratio= 69.63%   bpb=5.570   +96.51%   lossless=YES
+    use_approximate+use_token_entropy                               16462 B   ratio= 69.63%   bpb=5.570   +96.51%   lossless=YES
+    use_approximate+use_reverse_complement                          16462 B   ratio= 69.63%   bpb=5.570   +96.51%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy        16462 B   ratio= 69.63%   bpb=5.570   +96.51%   lossless=YES
+    sequence_ordering+use_approximate                               17484 B   ratio= 73.95%   bpb=5.916   +108.71%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy             17484 B   ratio= 73.95%   bpb=5.916   +108.71%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement        17484 B   ratio= 73.95%   bpb=5.916   +108.71%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy    17484 B   ratio= 73.95%   bpb=5.916   +108.71%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +7.60%  (averaged over 8 pairs)
+    use_approximate           : +71.88%  (averaged over 8 pairs)
+    use_reverse_complement    : +50.54%  (averaged over 8 pairs)
+    use_token_entropy         : -5.45%  (averaged over 8 pairs)
+
+Dataset: lambda_phage.fasta
+  Baseline (no flags): 16185 B  ratio=33.37%  bpb=2.670
+  All configurations (sorted by compressed size):
+    use_token_entropy                                               12294 B   ratio= 25.35%   bpb=2.028   -24.04%   lossless=YES
+    sequence_ordering+use_token_entropy                             12294 B   ratio= 25.35%   bpb=2.028   -24.04%   lossless=YES
+    compact_baseline                                                16185 B   ratio= 33.37%   bpb=2.670    +0.00%   lossless=YES
+    sequence_ordering                                               16185 B   ratio= 33.37%   bpb=2.670    +0.00%   lossless=YES
+    use_reverse_complement                                          16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    use_reverse_complement+use_token_entropy                        16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    use_approximate                                                 16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    use_approximate+use_token_entropy                               16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    use_approximate+use_reverse_complement                          16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy        16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_reverse_complement                        16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy      16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_approximate                               16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy             16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement        16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy    16187 B   ratio= 33.37%   bpb=2.670    +0.01%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +0.00%  (averaged over 8 pairs)
+    use_approximate           : +7.92%  (averaged over 8 pairs)
+    use_reverse_complement    : +7.92%  (averaged over 8 pairs)
+    use_token_entropy         : -6.01%  (averaged over 8 pairs)
+
+Dataset: large_test.fasta
+  Baseline (no flags): 8010 B  ratio=39.91%  bpb=3.193
+  All configurations (sorted by compressed size):
+    sequence_ordering+use_token_entropy                              4856 B   ratio= 24.20%   bpb=1.936   -39.38%   lossless=YES
+    use_token_entropy                                                5009 B   ratio= 24.96%   bpb=1.997   -37.47%   lossless=YES
+    sequence_ordering                                                7863 B   ratio= 39.18%   bpb=3.135    -1.84%   lossless=YES
+    compact_baseline                                                 8010 B   ratio= 39.91%   bpb=3.193    +0.00%   lossless=YES
+    use_reverse_complement                                          14355 B   ratio= 71.53%   bpb=5.723   +79.21%   lossless=YES
+    use_reverse_complement+use_token_entropy                        14355 B   ratio= 71.53%   bpb=5.723   +79.21%   lossless=YES
+    sequence_ordering+use_reverse_complement                        15310 B   ratio= 76.29%   bpb=6.103   +91.14%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy      15310 B   ratio= 76.29%   bpb=6.103   +91.14%   lossless=YES
+    use_approximate                                                 17344 B   ratio= 86.43%   bpb=6.914   +116.53%   lossless=YES
+    use_approximate+use_token_entropy                               17344 B   ratio= 86.43%   bpb=6.914   +116.53%   lossless=YES
+    use_approximate+use_reverse_complement                          17344 B   ratio= 86.43%   bpb=6.914   +116.53%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy        17344 B   ratio= 86.43%   bpb=6.914   +116.53%   lossless=YES
+    sequence_ordering+use_approximate                               20586 B   ratio=102.58%   bpb=8.206   +157.00%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy             20586 B   ratio=102.58%   bpb=8.206   +157.00%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement        20586 B   ratio=102.58%   bpb=8.206   +157.00%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy    20586 B   ratio=102.58%   bpb=8.206   +157.00%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +10.40%  (averaged over 8 pairs)
+    use_approximate           : +119.89%  (averaged over 8 pairs)
+    use_reverse_complement    : +71.97%  (averaged over 8 pairs)
+    use_token_entropy         : -9.46%  (averaged over 8 pairs)
+
+Dataset: medium_test.fasta
+  Baseline (no flags): 3206 B  ratio=40.92%  bpb=3.274
+  All configurations (sorted by compressed size):
+    sequence_ordering+use_token_entropy                              1894 B   ratio= 24.18%   bpb=1.934   -40.92%   lossless=YES
+    use_token_entropy                                                2004 B   ratio= 25.58%   bpb=2.046   -37.49%   lossless=YES
+    sequence_ordering                                                3019 B   ratio= 38.54%   bpb=3.083    -5.83%   lossless=YES
+    compact_baseline                                                 3206 B   ratio= 40.92%   bpb=3.274    +0.00%   lossless=YES
+    sequence_ordering+use_reverse_complement                         4682 B   ratio= 59.77%   bpb=4.781   +46.04%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy       4682 B   ratio= 59.77%   bpb=4.781   +46.04%   lossless=YES
+    use_approximate                                                  6144 B   ratio= 78.43%   bpb=6.274   +91.64%   lossless=YES
+    use_approximate+use_token_entropy                                6144 B   ratio= 78.43%   bpb=6.274   +91.64%   lossless=YES
+    use_approximate+use_reverse_complement                           6144 B   ratio= 78.43%   bpb=6.274   +91.64%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy         6144 B   ratio= 78.43%   bpb=6.274   +91.64%   lossless=YES
+    use_reverse_complement                                           6516 B   ratio= 83.18%   bpb=6.654   +103.24%   lossless=YES
+    use_reverse_complement+use_token_entropy                         6516 B   ratio= 83.18%   bpb=6.654   +103.24%   lossless=YES
+    sequence_ordering+use_approximate                                6969 B   ratio= 88.96%   bpb=7.117   +117.37%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy              6969 B   ratio= 88.96%   bpb=7.117   +117.37%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement         6969 B   ratio= 88.96%   bpb=7.117   +117.37%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy     6969 B   ratio= 88.96%   bpb=7.117   +117.37%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : -1.74%  (averaged over 8 pairs)
+    use_approximate           : +97.91%  (averaged over 8 pairs)
+    use_reverse_complement    : +66.33%  (averaged over 8 pairs)
+    use_token_entropy         : -9.34%  (averaged over 8 pairs)
+
+Dataset: phiX174.fasta
+  Baseline (no flags): 1812 B  ratio=33.64%  bpb=2.691
+  All configurations (sorted by compressed size):
+    use_token_entropy                                                1398 B   ratio= 25.96%   bpb=2.076   -22.85%   lossless=YES
+    sequence_ordering+use_token_entropy                              1398 B   ratio= 25.96%   bpb=2.076   -22.85%   lossless=YES
+    compact_baseline                                                 1812 B   ratio= 33.64%   bpb=2.691    +0.00%   lossless=YES
+    sequence_ordering                                                1812 B   ratio= 33.64%   bpb=2.691    +0.00%   lossless=YES
+    use_reverse_complement                                           1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    use_reverse_complement+use_token_entropy                         1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    use_approximate                                                  1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    use_approximate+use_token_entropy                                1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    use_approximate+use_reverse_complement                           1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy         1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_reverse_complement                         1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy       1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_approximate                                1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy              1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement         1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy     1814 B   ratio= 33.68%   bpb=2.694    +0.11%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +0.00%  (averaged over 8 pairs)
+    use_approximate           : +7.47%  (averaged over 8 pairs)
+    use_reverse_complement    : +7.47%  (averaged over 8 pairs)
+    use_token_entropy         : -5.71%  (averaged over 8 pairs)
+
+Dataset: repetitive_codon_test.fasta
+  Baseline (no flags): 8603 B  ratio=37.13%  bpb=2.970
+  All configurations (sorted by compressed size):
+    use_token_entropy                                                2263 B   ratio=  9.77%   bpb=0.781   -73.70%   lossless=YES
+    sequence_ordering+use_token_entropy                              2503 B   ratio= 10.80%   bpb=0.864   -70.91%   lossless=YES
+    sequence_ordering                                                8570 B   ratio= 36.99%   bpb=2.959    -0.38%   lossless=YES
+    compact_baseline                                                 8603 B   ratio= 37.13%   bpb=2.970    +0.00%   lossless=YES
+    use_reverse_complement                                          16251 B   ratio= 70.14%   bpb=5.611   +88.90%   lossless=YES
+    use_reverse_complement+use_token_entropy                        16251 B   ratio= 70.14%   bpb=5.611   +88.90%   lossless=YES
+    sequence_ordering+use_reverse_complement                        19162 B   ratio= 82.70%   bpb=6.616   +122.74%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy      19162 B   ratio= 82.70%   bpb=6.616   +122.74%   lossless=YES
+    sequence_ordering+use_approximate                               23039 B   ratio= 99.43%   bpb=7.954   +167.80%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy             23039 B   ratio= 99.43%   bpb=7.954   +167.80%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement        23039 B   ratio= 99.43%   bpb=7.954   +167.80%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy    23039 B   ratio= 99.43%   bpb=7.954   +167.80%   lossless=YES
+    use_approximate                                                 23770 B   ratio=102.59%   bpb=8.207   +176.30%   lossless=YES
+    use_approximate+use_token_entropy                               23770 B   ratio=102.59%   bpb=8.207   +176.30%   lossless=YES
+    use_approximate+use_reverse_complement                          23770 B   ratio=102.59%   bpb=8.207   +176.30%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy        23770 B   ratio=102.59%   bpb=8.207   +176.30%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +4.22%  (averaged over 8 pairs)
+    use_approximate           : +281.12%  (averaged over 8 pairs)
+    use_reverse_complement    : +187.02%  (averaged over 8 pairs)
+    use_token_entropy         : -18.06%  (averaged over 8 pairs)
+
+Dataset: small_test.fasta
+  Baseline (no flags): 892 B  ratio=35.91%  bpb=2.873
+  All configurations (sorted by compressed size):
+    use_token_entropy                                                 464 B   ratio= 18.68%   bpb=1.494   -47.98%   lossless=YES
+    sequence_ordering+use_token_entropy                               476 B   ratio= 19.16%   bpb=1.533   -46.64%   lossless=YES
+    compact_baseline                                                  892 B   ratio= 35.91%   bpb=2.873    +0.00%   lossless=YES
+    sequence_ordering                                                 907 B   ratio= 36.51%   bpb=2.921    +1.68%   lossless=YES
+    use_reverse_complement                                            916 B   ratio= 36.88%   bpb=2.950    +2.69%   lossless=YES
+    use_reverse_complement+use_token_entropy                          916 B   ratio= 36.88%   bpb=2.950    +2.69%   lossless=YES
+    sequence_ordering+use_reverse_complement                          947 B   ratio= 38.12%   bpb=3.050    +6.17%   lossless=YES
+    sequence_ordering+use_reverse_complement+use_token_entropy        947 B   ratio= 38.12%   bpb=3.050    +6.17%   lossless=YES
+    use_approximate                                                  1970 B   ratio= 79.31%   bpb=6.345   +120.85%   lossless=YES
+    use_approximate+use_token_entropy                                1970 B   ratio= 79.31%   bpb=6.345   +120.85%   lossless=YES
+    use_approximate+use_reverse_complement                           1970 B   ratio= 79.31%   bpb=6.345   +120.85%   lossless=YES
+    use_approximate+use_reverse_complement+use_token_entropy         1970 B   ratio= 79.31%   bpb=6.345   +120.85%   lossless=YES
+    sequence_ordering+use_approximate                                2575 B   ratio=103.66%   bpb=8.293   +188.68%   lossless=YES
+    sequence_ordering+use_approximate+use_token_entropy              2575 B   ratio=103.66%   bpb=8.293   +188.68%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement         2575 B   ratio=103.66%   bpb=8.293   +188.68%   lossless=YES
+    sequence_ordering+use_approximate+use_reverse_complement+use_token_entropy     2575 B   ratio=103.66%   bpb=8.293   +188.68%   lossless=YES
+  Average marginal contribution per flag (negative = smaller output):
+    sequence_ordering         : +16.73%  (averaged over 8 pairs)
+    use_approximate           : +205.53%  (averaged over 8 pairs)
+    use_reverse_complement    : +25.43%  (averaged over 8 pairs)
+    use_token_entropy         : -11.94%  (averaged over 8 pairs)
+
+Reading guide:
+  Each row reports compressed_bytes for one (dataset, flag-combo) pair.
+  The 'marginal contribution' lines isolate each flag by averaging the
+  size change from toggling it on while holding the other three fixed.
+  A flag whose marginal is consistently near 0% across datasets is
+  not earning its keep on this benchmark.

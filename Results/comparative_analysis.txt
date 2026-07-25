@@ -1,0 +1,124 @@
+COMPARATIVE ANALYSIS: DNA-specific codecs vs general-purpose baselines
+=====================================================================
+
+DNA-specific: VCSDplus (compact + entropy modes), DNACompress, LZ78, LZSS.
+General-purpose: gzip, lzma, bz2, zlib, 2-bit pack (information-theoretic floor).
+
+Dataset: codon_conserved_variation_test.fasta
+  All algorithms:
+    - lzma_default: ratio=11.35% | encode=0.0104s | decode=0.0001s | lossless=YES
+    - zlib_lvl9: ratio=15.47% | encode=0.0020s | decode=0.0000s | lossless=YES
+    - gzip_lvl9: ratio=15.52% | encode=0.0021s | decode=0.0001s | lossless=YES
+    - bz2_lvl9: ratio=18.15% | encode=0.0014s | decode=0.0003s | lossless=YES
+    - 2bit_pack: ratio=25.02% | encode=0.0012s | decode=0.0013s | lossless=YES
+    - VCSDplus_entropy: ratio=28.26% | encode=0.0285s | decode=0.0254s | lossless=YES
+    - VCSDplus: ratio=35.88% | encode=0.0301s | decode=0.0253s | lossless=YES
+    - DNACompress: ratio=40.35% | encode=0.0234s | decode=0.0012s | lossless=YES
+    - LZSS: ratio=41.06% | encode=0.3366s | decode=0.0013s | lossless=YES
+    - LZ78_style: ratio=60.82% | encode=0.0166s | decode=0.0040s | lossless=YES
+  Best compression: lzma_default (11.35%)
+  Fastest overall:   bz2_lvl9 (0.0017s)
+
+Dataset: large_test.fasta
+  All algorithms:
+    - bz2_lvl9: ratio=15.85% | encode=0.0022s | decode=0.0002s | lossless=YES
+    - lzma_default: ratio=16.46% | encode=0.0048s | decode=0.0001s | lossless=YES
+    - zlib_lvl9: ratio=17.33% | encode=0.0014s | decode=0.0000s | lossless=YES
+    - gzip_lvl9: ratio=17.39% | encode=0.0014s | decode=0.0000s | lossless=YES
+    - VCSDplus_entropy: ratio=24.20% | encode=0.0737s | decode=0.0720s | lossless=YES
+    - 2bit_pack: ratio=25.02% | encode=0.0010s | decode=0.0011s | lossless=YES
+    - VCSDplus: ratio=39.18% | encode=0.0749s | decode=0.0719s | lossless=YES
+    - LZSS: ratio=51.39% | encode=0.3954s | decode=0.0013s | lossless=YES
+    - LZ78_style: ratio=59.52% | encode=0.0061s | decode=0.0032s | lossless=YES
+    - DNACompress: ratio=70.99% | encode=0.0282s | decode=0.0012s | lossless=YES
+  Best compression: bz2_lvl9 (15.85%)
+  Fastest overall:   zlib_lvl9 (0.0014s)
+
+Dataset: medium_test.fasta
+  All algorithms:
+    - bz2_lvl9: ratio=17.39% | encode=0.0005s | decode=0.0001s | lossless=YES
+    - zlib_lvl9: ratio=18.68% | encode=0.0003s | decode=0.0000s | lossless=YES
+    - lzma_default: ratio=18.79% | encode=0.0008s | decode=0.0001s | lossless=YES
+    - gzip_lvl9: ratio=18.83% | encode=0.0003s | decode=0.0000s | lossless=YES
+    - VCSDplus_entropy: ratio=24.18% | encode=0.0210s | decode=0.0200s | lossless=YES
+    - 2bit_pack: ratio=25.06% | encode=0.0004s | decode=0.0004s | lossless=YES
+    - VCSDplus: ratio=38.54% | encode=0.0210s | decode=0.0199s | lossless=YES
+    - LZSS: ratio=53.55% | encode=0.1514s | decode=0.0005s | lossless=YES
+    - LZ78_style: ratio=65.62% | encode=0.0025s | decode=0.0014s | lossless=YES
+    - DNACompress: ratio=87.96% | encode=0.0106s | decode=0.0005s | lossless=YES
+  Best compression: bz2_lvl9 (17.39%)
+  Fastest overall:   zlib_lvl9 (0.0003s)
+
+Dataset: repetitive_codon_test.fasta
+  All algorithms:
+    - zlib_lvl9: ratio=1.36% | encode=0.0001s | decode=0.0000s | lossless=YES
+    - gzip_lvl9: ratio=1.41% | encode=0.0002s | decode=0.0000s | lossless=YES
+    - lzma_default: ratio=1.62% | encode=0.0026s | decode=0.0001s | lossless=YES
+    - bz2_lvl9: ratio=2.30% | encode=0.0022s | decode=0.0001s | lossless=YES
+    - DNACompress: ratio=5.41% | encode=0.0343s | decode=0.0006s | lossless=YES
+    - VCSDplus_entropy: ratio=10.80% | encode=0.1022s | decode=0.0983s | lossless=YES
+    - LZSS: ratio=14.65% | encode=0.1808s | decode=0.0008s | lossless=YES
+    - 2bit_pack: ratio=25.02% | encode=0.0011s | decode=0.0013s | lossless=YES
+    - VCSDplus: ratio=36.99% | encode=0.1016s | decode=0.0976s | lossless=YES
+    - LZ78_style: ratio=49.06% | encode=0.0068s | decode=0.0035s | lossless=YES
+  Best compression: zlib_lvl9 (1.36%)
+  Fastest overall:   zlib_lvl9 (0.0002s)
+
+Dataset: small_test.fasta
+  All algorithms:
+    - zlib_lvl9: ratio=14.86% | encode=0.0000s | decode=0.0000s | lossless=YES
+    - gzip_lvl9: ratio=15.34% | encode=0.0001s | decode=0.0000s | lossless=YES
+    - bz2_lvl9: ratio=15.62% | encode=0.0002s | decode=0.0000s | lossless=YES
+    - lzma_default: ratio=18.36% | encode=0.0048s | decode=0.0000s | lossless=YES
+    - VCSDplus_entropy: ratio=19.16% | encode=0.0075s | decode=0.0073s | lossless=YES
+    - 2bit_pack: ratio=25.16% | encode=0.0001s | decode=0.0001s | lossless=YES
+    - VCSDplus: ratio=36.51% | encode=0.0078s | decode=0.0075s | lossless=YES
+    - LZSS: ratio=42.87% | encode=0.0334s | decode=0.0001s | lossless=YES
+    - LZ78_style: ratio=68.96% | encode=0.0008s | decode=0.0005s | lossless=YES
+    - DNACompress: ratio=71.14% | encode=0.0031s | decode=0.0001s | lossless=YES
+  Best compression: zlib_lvl9 (14.86%)
+  Fastest overall:   zlib_lvl9 (0.0000s)
+
+Dataset: phiX174.fasta
+  All algorithms:
+    - 2bit_pack: ratio=25.08% | encode=0.0003s | decode=0.0003s | lossless=YES
+    - VCSDplus_entropy: ratio=25.96% | encode=0.2171s | decode=0.2172s | lossless=YES
+    - bz2_lvl9: ratio=28.59% | encode=0.0003s | decode=0.0001s | lossless=YES
+    - zlib_lvl9: ratio=31.53% | encode=0.0003s | decode=0.0000s | lossless=YES
+    - gzip_lvl9: ratio=31.75% | encode=0.0003s | decode=0.0000s | lossless=YES
+    - lzma_default: ratio=32.53% | encode=0.0053s | decode=0.0001s | lossless=YES
+    - VCSDplus: ratio=33.64% | encode=0.2174s | decode=0.2175s | lossless=YES
+    - LZ78_style: ratio=73.36% | encode=0.0017s | decode=0.0010s | lossless=YES
+    - LZSS: ratio=79.69% | encode=0.1278s | decode=0.0005s | lossless=YES
+    - DNACompress: ratio=144.45% | encode=0.0144s | decode=0.0005s | lossless=YES
+  Best compression: 2bit_pack (25.08%)
+  Fastest overall:   zlib_lvl9 (0.0003s)
+
+Dataset: lambda_phage.fasta
+  All algorithms:
+    - 2bit_pack: ratio=25.01% | encode=0.0025s | decode=0.0027s | lossless=YES
+    - VCSDplus_entropy: ratio=25.35% | encode=17.8389s | decode=17.6068s | lossless=YES
+    - bz2_lvl9: ratio=27.32% | encode=0.0023s | decode=0.0008s | lossless=YES
+    - lzma_default: ratio=27.77% | encode=0.0076s | decode=0.0004s | lossless=YES
+    - zlib_lvl9: ratio=29.63% | encode=0.0161s | decode=0.0001s | lossless=YES
+    - gzip_lvl9: ratio=29.65% | encode=0.0163s | decode=0.0001s | lossless=YES
+    - VCSDplus: ratio=33.37% | encode=18.1461s | decode=17.8521s | lossless=YES
+    - LZ78_style: ratio=62.19% | encode=0.0152s | decode=0.0089s | lossless=YES
+    - LZSS: ratio=77.03% | encode=1.2491s | decode=0.0042s | lossless=YES
+    - DNACompress: ratio=97.61% | encode=0.0490s | decode=0.0044s | lossless=YES
+  Best compression: 2bit_pack (25.01%)
+  Fastest overall:   bz2_lvl9 (0.0031s)
+
+READING GUIDE
+  - 2-bit pack at ~25% ratio is the information-theoretic floor for i.i.d.
+    DNA; any 'compressor' that does not beat it on a given dataset is
+    not actually compressing relative to the trivial encoding.
+  - The general-purpose baselines (lzma / bz2 / zlib / gzip) consistently
+    beat the DNA-specific codecs on synthetic repetitive data.  The
+    DNA-specific codecs win only on inputs where their structural
+    assumption (long exact repeats for DNACompress, codon-scale repetition
+    for VCSD+) actually holds; see Results/ablation_results.txt for
+    a per-flag decomposition.
+  - Encode and decode times for VCSDplus on lambda_phage are O(seconds)
+    in pure Python; production-scale comparisons would need a port to a
+    faster language.
