@@ -1,2 +1,167 @@
-# DNA-compression
-DNA compression algorithm for benchmarking
+# DNA Compression Algorithms
+
+This project implements four DNA compression codecs from scratch and benchmarks
+them against five general-purpose stdlib compressors plus a 2-bit-pack
+information-theoretic floor:
+
+- VCSD+ codon-aware dictionary compression
+- DNACompress-style repeat-finding compression
+- LZ78-style baseline compression
+- LZSS sliding-window compression
+- gzip / lzma / bz2 / raw zlib / 2-bit pack (general-purpose baselines)
+
+It includes a benchmark runner with synthetic FASTA generators, two real
+public-domain reference genomes (ϕX174, Lambda phage) fetched from NCBI,
+empirical Shannon and k-th order conditional entropy reporting, a four-flag
+VCSD+ ablation study, matplotlib visualizations, and a written report
+suitable for a PhD proficiency exam.
+
+## Installation
+
+The codecs themselves use Python 3.9+ and standard-library modules only.
+Tests and analysis depend on `pytest` and `matplotlib`, both pinned in
+`requirements.txt`:
+
+```bash
+python3 -m pip install --user -r requirements.txt
+```
+
+## Quick Start
+
+Reproduce every artifact in one command (≈15-20 minutes; see `run_all.sh`):
+
+```bash
+./run_all.sh
+```
+
+Or run the steps individually:
+
+```bash
+python3 fetch_real_genomes.py        # download phiX174 + Lambda phage (best-effort)
+python3 -m pytest tests/             # 150 round-trip and edge-case tests
+python3 comparison.py --full-pipeline # benchmark + reports + plots
+python3 ablation.py                  # 16-config VCSD+ ablation
+```
+
+`comparison.py` also accepts `--prepare-data`, `--run-benchmark`, and
+`--generate-reports` flags for partial runs.
+
+## File Descriptions
+
+- `VCSDplus.py`: codon-aware VCSD+ encoder and decoder
+- `DNACompress.py`: repeat-finding DNACompress-style encoder and decoder
+- `LZ78_style.py`: baseline LZ78-style codec
+- `LZSS.py`: sliding-window codec
+- `baselines.py`: stdlib wrappers (gzip / lzma / bz2 / zlib) and 2-bit packing
+- `entropy.py`: Shannon and k-th order conditional entropy
+- `ablation.py`: VCSD+ four-flag ablation study
+- `plots.py`: matplotlib visualizations (compression ratio, Pareto, ablation)
+- `comparison.py`: benchmark orchestration and report generation
+- `utils.py`: FASTA I/O, metrics, bitstream helpers, and synthetic dataset generation
+- `fetch_real_genomes.py`: best-effort downloader for NCBI reference genomes
+- `run_all.sh`: one-command reproducibility wrapper
+- `tests/`: 150 round-trip, edge-case, and entropy tests
+- `docs/report.md`, `docs/slides_outline.md`: written report and defense slides
+
+## Algorithm Notes
+
+### VCSD+
+The VCSD+ implementation uses codon-aligned tokenization, a prefix-closed trie dictionary, and support for approximate and reverse-complement candidate matching. The encoder and decoder operate on a compact binary stream and preserve the original sequence order.
+
+### DNACompress
+The DNACompress-style implementation looks for exact repeated DNA substrings using a seed-and-extend repeat index. It is closer to repeat-based genomic compression than to codon-aware compression, so it is a better baseline for comparing long exact repeats and transfer size on raw DNA strings.
+
+### LZ78-style
+The LZ78-style codec works on raw DNA strings, finds the longest dictionary phrase at each position, and emits phrase-reference tokens with a trailing base.
+
+### LZSS
+The LZSS codec uses a fixed-size sliding window and emits either literal bases or match tokens with offset and length.
+
+## Usage Examples
+
+Encode and decode a FASTA dataset with VCSD+:
+
+```python
+from VCSDplus import VCSDEncoder, VCSDDecoder
+from utils import load_sequences_from_fasta
+
+records = load_sequences_from_fasta("sample_data/small_test.fasta")
+encoder = VCSDEncoder(use_approximate=True, use_reverse_complement=True)
+bitstream = encoder.encode(records)
+decoder = VCSDDecoder()
+decoded = decoder.decode(bitstream)
+```
+
+Use the LZ78-style codec:
+
+```python
+from LZ78_style import LZ78Encoder, LZ78Decoder
+
+text = "ACGTACGTACGT"
+encoder = LZ78Encoder()
+encoded = encoder.encode(text)
+decoder = LZ78Decoder()
+decoded = decoder.decode(encoded)
+```
+
+Use the LZSS codec:
+
+```python
+from LZSS import LZSSEncoder, LZSSDecoder
+
+text = "ACGTACGTACGT"
+encoder = LZSSEncoder()
+encoded = encoder.encode(text)
+decoder = LZSSDecoder()
+decoded = decoder.decode(encoded)
+```
+
+## Results Interpretation
+
+The benchmark writes output files in `Results/`:
+
+- `compression_ratio_report.txt`: human-readable metrics
+- `performance_metrics.csv`: tabular metrics for spreadsheet analysis
+- `memory_usage_analysis.txt`: memory summary
+- `timing_results.json`: structured timing data
+- `comparative_analysis.txt`: summary comparison of the algorithms
+- `entropy_analysis.txt`: empirical H_0..H_5 entropy per dataset
+- `ablation_results.txt`, `ablation_results.csv`: VCSD+ feature-flag ablation
+- `plots/{compression_ratio,ratio_vs_time,ablation_contributions}.png`: figures (regenerated by `plots.py`; not version-controlled)
+
+### Dataset Categories
+
+Two of the synthetic datasets exist specifically to probe the
+codon-aware versus repeat-aware axis:
+
+- `repetitive_codon_test.fasta`: strongly repetitive codon-like sequences
+- `codon_conserved_variation_test.fasta`: codon-conserved motifs with moderate variation
+
+What the empirical results actually show on these (see
+`Results/comparative_analysis.txt`):
+
+- On `repetitive_codon_test.fasta`, the **general-purpose** entropy
+  coders dominate: zlib at 1.4%, gzip at 1.4%, lzma at 1.6%, bz2 at
+  2.3%.  DNACompress is the best DNA-specific codec on this input
+  (5.4%) but is beaten by all four general-purpose codecs.  LZSS does
+  *not* win here — its sliding-window matching is rate-uncompetitive
+  against entropy-coded DEFLATE on input with this structure.
+- On `codon_conserved_variation_test.fasta`, lzma wins outright at
+  11.4% and the layered VCSDplus_entropy lands at 28.3%.  VCSD+ does
+  better here than on its own random/mixed datasets, but it is still
+  beaten by all four general-purpose baselines.
+
+The honest read: **codon-aware tokenization is meaningful as an
+implementation study, but on inputs of this scale a generic entropy
+post-pass dominates the achievable compression.**  See `docs/report.md`
+sections 5.4 and 6.2 for the ablation that quantifies this.
+
+## References
+
+A complete bibliography lives in `docs/report.md`.  The four
+DNA-specific codecs in this repository correspond to:
+
+1. Ziv, J. and Lempel, A. (1978). _Compression of individual sequences via variable-rate coding._ — LZ78
+2. Storer, J. A. and Szymanski, T. G. (1982). _Data compression via text encoding._ — LZSS
+3. Chen, X., Li, M., Ma, B., Tromp, J. (2002). _DNACompress: fast and effective DNA sequence compression._ — DNACompress
+4. Ahmad, S. (2026). _VCSD+: Variable-length Codon-aligned Sliding Dictionary: A Formal Specification._ — VCSD+ (this implementation)
