@@ -1,12 +1,10 @@
 {
   "title": "A codon-aware dictionary framework for lossless DNA compression: benchmarking and ablation study",
   "upload_type": "software",
-  "description": "This is a framework for lossless DNA compression, together with a reproducible benchmark and ablation study. The implementation is lossless across all tested193
-datasets, and the project test suite passes 150 automated tests",
+  "description": "This is a framework for lossless DNA compression, together with a reproducible benchmark and ablation study. The implementation is lossless across all tested datasets, and the project test suite passes 150 automated tests",
   "creators": [{"name": "Ahmad, Sadiya", "affiliation": "Iowa State University"}],
   "license": "MIT",
-  "keywords": ["DNA compression"; "genomic data compression"; "codon-aware compression"; "dictionary coding";
-"LZ78"; "LZSS"; "DNACompress"; "bioinformatics benchmarking"],
+  "keywords": ["DNA compression"; "genomic data compression"; "codon-aware compression"; "dictionary coding"; "LZ78"; "LZSS"; "DNACompress"; "bioinformatics benchmarking"],
   "related_identifiers": [
     {"identifier": "https://github.com/Sadiya-ISU/DNA-compression",
      "relation": "isSupplementTo", "scheme": "url"}
